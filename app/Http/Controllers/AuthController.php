@@ -16,7 +16,7 @@ class AuthController extends Controller
     public function login(Request $request){
         $rules = [
             'name' => 'required|string|min:1|max:100',
-            'email' => 'required|min:1|max:100|email',
+            'email' => 'required|min:1|max:200|email',
             'password' => 'required|string|min:1|max:100',
         ];
  
